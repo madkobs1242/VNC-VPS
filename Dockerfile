@@ -91,4 +91,7 @@ RUN export UNAME=$UNAME UID=1000 GID=1000 && \
 RUN echo xfce4-session >~/.xsession
 RUN echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" 
 
+ENV PORT = 8000
+EXPOSE 8000
+
 CMD ["/app/run.sh"]
